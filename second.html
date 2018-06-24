@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+            p.sticky{
+                position: fixed;
+                top: 50px;
+                /* relative, absolute, sticky, fixed */
+            }
+
+            .inline{
+                display: inline-block;
+                padding: 10px;
+                background-color: blue;
+            }
+
+            .flex{
+                height: 400px;
+                background-color: blue;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column
+            }
+
+            .flex p{
+                background-color: yellow;
+                margin: 0;
+                display: unset;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div style="height: 200px;"></div>
+        
+        <div style="background-color: green">
+            <div class="inline">inline</div>
+            <div class="inline">inline</div>
+            <div class="inline">inline</div>
+        </div>
+        <!-- <p class="sticky">sticky</p> -->
+        <div>
+            <p>
+                Hello this is s para
+            </p>
+        </div>
+        
+        <!-- <div style="height: 2000px"></div> -->
+
+        <p>
+            this is second para
+        </p>
+
+        <!-- flex-direction: row, column
+        
+            :row
+                primary-axis: x-axis;
+                secondary-axis: y-axis;
+
+                justify-content: primary-axis
+                    flex-start, flex-end, center, space-around, space-between
+                align-items: secondary-axis
+                    flex-start, flex-end, center
+
+            :column
+                primary-axis: y-axis;
+                secondary-axis: x-axis;
+
+                justify-content: secondary-axis
+                align-items: primary-axis
+
+        -->
+
+
+        <div class="flex">
+
+            <span>para1</span>
+            <span>para1</span>
+            <span>para1</span>
+        </div>
+    </body>
+</html>

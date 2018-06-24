@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <style>
+            /*tag name selector  */
+            p{
+                padding: 5px 10px 15px;
+                margin: 10px;
+                border: 1px solid black    
+            }
+
+            div.myClass{
+                color: red
+            }
+            /* selects all p tags where parent is div */
+            div p{
+                color: blue
+            }
+
+            /* selects all p taghs which are immediate childs of div */
+            div > p{
+                color: aqua
+            }
+
+            /* selects all p elements which lie immediately after div tag */
+            div + p{
+                color: brown
+            }
+
+            [href]{
+                color: pink
+            }
+
+            [href="#"]{
+                font-size: 30px
+            }
+
+            p:hover{
+                color: yellow
+            }
+
+            /* selects all p elements which are first child of their parent */
+            div p:first-child{
+                font-size: 35px;
+            }
+
+            div p:nth-child(odd){
+                color: green
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            This is a para
+        </p>
+
+        <span>
+            hello
+        </span>
+        <p class="myClass">
+            This is a para
+        </p>
+        
+        <p class="myClass">
+            This is a para
+        </p>
+
+        <div class="myClass">
+            This is a div
+        </div>
+
+        <div>
+            <p>
+                Hello this is a para inside div
+            </p>
+
+            <section>
+                <p>
+                    para inside div which lie inside div
+                </p>
+            </section>
+        </div>
+
+        <p>
+            para immediately after div
+        </p>
+
+        <p href>
+            para immediately after p
+        </p>
+
+        <a>Without href</a>
+        <a href="">Blank href</a>
+        <a href="#">Href as #</a>
+        <a href="https://www.google.com">Link</a>
+        <a>
+
+            <p href>dfghjk</p>
+        </a>
+
+        <div>
+            <p>para 1</p>
+            <p>para 2</p>
+            <p>para 3</p>
+            <p>para 4</p>
+            <p>para 5</p>
+        </div>
+    </body>
+</html>
